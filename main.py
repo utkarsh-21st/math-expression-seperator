@@ -1,4 +1,4 @@
-from function import *
+from functions import *
 from pathlib import Path
 import argparse
 
