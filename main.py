@@ -23,5 +23,4 @@ if __name__ == '__main__':
     temp = apply_thresh(resize_img)
     # show(temp, 'after threshold')
     # each mask contains a single component of the abstract in the image
-    path = Path.cwd() / 'saved'
     save_all_masks(temp, show_boxes=args.show_boxes, path=Path(args.output_path))

@@ -76,7 +76,7 @@ def squarify(img):
         return np.pad(img, ((pad_1, pad_2), (0, 0)), mode='constant', constant_values=255)
 
 
-def save_all_masks(img, show_boxes, path=Path.cwd() / 'saved'):
+def save_all_masks(img, show_boxes, path):
     cnts, _ = cv.findContours(255 - img, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)  # 1st stage contour
     pad_x = 2
     pad_y = 2
