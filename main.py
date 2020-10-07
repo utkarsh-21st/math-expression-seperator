@@ -18,7 +18,7 @@ if __name__ == '__main__':
     img_path = args.input_path
     img = read(img_path)
     # show(img, 'original')
-    resize_img = resize(img, 600)  # resizing with a width of 600 while maintaining aspect ratio
+    resize_img = resize(img, 600)  # resizing to a width of 600 while maintaining the aspect ratio
     # show(resize_img, 'after resize')
     temp = apply_thresh(resize_img)
     # show(temp, 'after threshold')
